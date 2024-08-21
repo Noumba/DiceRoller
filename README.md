@@ -1,16 +1,47 @@
 # dice_roller
 
-A new Flutter project.
+Dice Roller App
+Description
+The Dice Roller App is a simple and intuitive application designed to simulate the rolling of dice. Perfect for tabletop games, board games, and any scenario where you need random dice rolls.
 
-## Getting Started
+Features
+Roll one or multiple dice with a single tap.
+View the result of each roll instantly.
+Option to save and view a history of rolls.
 
-This project is a starting point for a Flutter application.
+Installation
+Prerequisites
+Flutter SDK
+Dart SDK
 
-A few resources to get you started if this is your first Flutter project:
+Steps
+Clone the Repository:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+git clone https://github.com/username/dice_roller.git
+Navigate to the Project Directory:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+cd dice-roller-app
+Install Dependencies:
+
+flutter pub get
+Run the App:
+
+flutter run
+
+Usage
+Open the app on your device or emulator.
+
+Tap the "Roll" button to see the result.
+View the history of rolls if needed.
+
+Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/YourFeature).
+Create a new Pull Request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact
+For any questions or issues, please reach out to n.leonardeinstein@gmail.com.
