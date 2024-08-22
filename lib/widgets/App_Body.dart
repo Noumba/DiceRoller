@@ -1,3 +1,4 @@
+import 'package:dice_roller/widgets/Roll_Button.dart';
 import 'package:flutter/material.dart';
 
 class AppBody extends StatefulWidget {
@@ -15,13 +16,16 @@ class _AppBodyState extends State<AppBody> {
 
     return Center(
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Image(
             image: const AssetImage('asset/dice-1.png'),
             height: screenSizeHeight * 0.3,
             width: screenSizeWidth * 0.4,
-          )
+          ),
+          const RollButton(buttonText: 'ROLL&WIN')
         ],
       ),
     );
