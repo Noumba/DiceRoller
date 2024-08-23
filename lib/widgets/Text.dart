@@ -9,7 +9,10 @@ class TextFormat extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-          color: Colors.deepPurple, fontWeight: FontWeight.w500),
+          wordSpacing: 2.0,
+          fontSize: 19,
+          color: Colors.deepPurple,
+          fontWeight: FontWeight.w600),
     );
   }
 }

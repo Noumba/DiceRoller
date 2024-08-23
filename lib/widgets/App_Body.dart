@@ -14,19 +14,20 @@ class _AppBodyState extends State<AppBody> {
     final screenSizeWidth = MediaQuery.of(context).size.width;
     final screenSizeHeight = MediaQuery.of(context).size.height;
 
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Image(
-            image: const AssetImage('asset/dice-1.png'),
-            height: screenSizeHeight * 0.3,
-            width: screenSizeWidth * 0.4,
-          ),
-          const RollButton(buttonText: 'ROLL&WIN')
-        ],
+    return SizedBox.expand(
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Image(
+              image: const AssetImage('asset/dice-1.png'),
+              height: screenSizeHeight * 0.3,
+              width: screenSizeWidth * 0.4,
+            ),
+            const RollButton(buttonText: 'ROLL&WIN')
+          ],
+        ),
       ),
     );
   }

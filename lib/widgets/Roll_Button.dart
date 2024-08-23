@@ -13,6 +13,7 @@ class RollButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.all(10),
             elevation: 30.0,
             shape: const BeveledRectangleBorder(
                 side: BorderSide.none,
