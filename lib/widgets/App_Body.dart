@@ -1,5 +1,10 @@
+import 'package:dice_roller/widgets/Dice_Image.dart';
 import 'package:dice_roller/widgets/Roll_Button.dart';
 import 'package:flutter/material.dart';
+
+import 'dart:math';
+
+var random = Random();
 
 class AppBody extends StatefulWidget {
   const AppBody({super.key});
@@ -9,23 +14,27 @@ class AppBody extends StatefulWidget {
 }
 
 class _AppBodyState extends State<AppBody> {
+  int diceState = 2;
+
+  void rollDice() {
+    diceState = 1 + random.nextInt(6);
+    setState(() {});
+    return;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final screenSizeWidth = MediaQuery.of(context).size.width;
-    final screenSizeHeight = MediaQuery.of(context).size.height;
-
     return SizedBox.expand(
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image(
-              image: const AssetImage('asset/dice-1.png'),
-              height: screenSizeHeight * 0.3,
-              width: screenSizeWidth * 0.4,
-            ),
-            const RollButton(buttonText: 'ROLL&WIN')
+            DiceImage(diceState: diceState),
+            RollButton(
+              buttonText: 'ROLL&WIN',
+              rollDice: rollDice,
+            )
           ],
         ),
       ),
