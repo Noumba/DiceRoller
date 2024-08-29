@@ -17,10 +17,10 @@ Dart SDK
 Steps
 Clone the Repository:
 
-git clone https://github.com/username/dice_roller.git
+git clone https://github.com/Noumba/DiceRoller.git
 Navigate to the Project Directory:
 
-cd dice-roller-app
+cd diceroller
 Install Dependencies:
 
 flutter pub get
